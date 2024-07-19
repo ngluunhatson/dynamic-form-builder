@@ -24,7 +24,6 @@ export const Loader = forwardRef<HTMLDivElement, LoaderProps>(
   ({ size, className }, ref) => (
     <div ref={ref} className={cn(loaderStyles({ size }), className)}>
       <LucideLoader className="h-full w-full animate-spin" />
-      <div className="bg-secondary text-secondary-foreground">Hello</div>
     </div>
   ),
 );
