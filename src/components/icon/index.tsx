@@ -8,7 +8,7 @@ export const IconNameArray = Object.keys(dynamicIconImports);
 
 interface IconProps extends LucideProps {
   variant?: "primary" | "secondary" | "destructive" | "muted" | "none";
-  name: string;
+  name: IconName;
 }
 
 export const Icon = ({ name, size, color, variant, ...props }: IconProps) => {
