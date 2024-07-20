@@ -2,9 +2,6 @@ import { LocalStorageKey, ThemeArray, ThemeEnum } from "@/lib";
 import { BackendProvider, ThemeProvider } from "@/providers";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
-
-const nunito = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dynamic Form Builder",
@@ -34,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={nunito.className}>
+      <body>
         <BackendProvider>
           <ThemeProvider
             attribute="class"
